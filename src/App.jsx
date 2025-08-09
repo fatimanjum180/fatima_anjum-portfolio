@@ -38,15 +38,16 @@ const App = () => {
             A Front-End Web Developer passionate about building responsive web apps
           </p>
           <a
-            href="#contact"
+            href="/Files/Fatima_Anjum_CV.pdf" 
+            download
             className="bg-fuchsia-950 text-white px-6 py-2 rounded-full hover:text-fuchsia-950 hover:bg-fuchsia-300 transition-colors duration-300 shadow"
           >
-            Contact Me
+            Download CV
           </a>
         </div>
       </section>
 
- {/* About Section */}
+      {/* About Section */}
       <section id="about" className="bg-purple-200 py-20 animate-fade-left">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-fuchsia-950">About Me</h2>
@@ -148,7 +149,7 @@ const App = () => {
       {/* Footer */}
       <footer className="bg-fuchsia-950 text-white text-center py-6 animate-fade-up">
         <div className="flex justify-center space-x-6 mb-3 text-lg">
-        
+
           <a href="https://www.linkedin.com/in/fatima-anjum-80ba41308/" className="hover:text-fuchsia-300 transition-colors">
             <FaLinkedin />
           </a>
