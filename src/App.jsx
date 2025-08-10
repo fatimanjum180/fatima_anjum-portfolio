@@ -40,7 +40,7 @@ const App = () => {
             A Front-End Web Developer passionate about building responsive web apps
           </p>
           <a
-            href="/Files/Fatima_Anjum_CV.pdf" 
+            href="/Files/Fatima_Anjum_CV.pdf"
             download
             className="bg-fuchsia-950 text-white px-6 py-2 rounded-full hover:text-fuchsia-950 hover:bg-fuchsia-300 transition-colors duration-300 shadow"
           >
@@ -77,6 +77,16 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
+                title: "Portfolio Website",
+                description:
+                  "My personal portfolio showcasing web development skills. Built using React, Tailwind CSS, and Framer Motion for animation. Fully responsive and optimized for performance.",
+              },
+              {
+                title: "LocalBiz Booster",
+                description:
+                  "A web platform designed to help local small businesses enhance their online presence by providing customized business pages, showcasing services, and enabling customer engagement through easy-to-use contact forms. Built with React and Tailwind CSS for a responsive and modern user experience."
+                  },
+              {
                 title: "Restaurant Management System",
                 description:
                   "Desktop Food Ordering App built using Java Swing and MySQL. Key features include a user-friendly interface for placing orders, menu display with item selection and quantity customization, and customer/order data storage. Designed for future scalability like admin panel integration.",
@@ -86,11 +96,6 @@ const App = () => {
                 title: "E-Commerce Website – Crafted Essentials",
                 description:
                   "A clean and responsive e-commerce website created using HTML, CSS, and JavaScript. The site features product listings, a dynamic shopping cart, and interactive filtering—all without any frameworks. Designed with mobile-first principles to ensure a smooth experience across all devices.",
-              },
-              {
-                title: "Portfolio Website",
-                description:
-                  "My personal portfolio showcasing web development skills. Built using React, Tailwind CSS, and Framer Motion for animation. Fully responsive and optimized for performance.",
               },
               {
                 title: "Inventory Management System",
@@ -118,8 +123,8 @@ const App = () => {
           </div>
         </div>
       </section>
-{/* Contact Section */}
-<ContactForm />
+      {/* Contact Section */}
+      <ContactForm />
 
       {/* Contact Section */}
       {/* <section id="contact" className="py-20 bg-white animate-fade-in">
