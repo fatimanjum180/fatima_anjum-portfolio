@@ -1,6 +1,8 @@
 import React from "react";
 import { AiFillMail } from "react-icons/ai";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import ContactForm from "./ContactForm";
+
 
 const App = () => {
   return (
@@ -116,9 +118,11 @@ const App = () => {
           </div>
         </div>
       </section>
+{/* Contact Section */}
+<ContactForm />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white animate-fade-in">
+      {/* <section id="contact" className="py-20 bg-white animate-fade-in">
         <div className="max-w-xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center text-fuchsia-950">Contact</h2>
           <form className="space-y-4">
@@ -144,7 +148,7 @@ const App = () => {
             </button>
           </form>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-fuchsia-950 text-white text-center py-6 animate-fade-up">
