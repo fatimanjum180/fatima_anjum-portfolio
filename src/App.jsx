@@ -6,17 +6,17 @@ import ContactForm from "./ContactForm";
 
 const App = () => {
   return (
-    <div className="font-sans text-white-900 bg-white">
+    <div className="font-sans text-amber-300 bg-white">
       {/* Header */}
-      <header className="bg-fuchsia-900 shadow-md sticky top-0 z-50 transition-all duration-300">
+      <header className="bg-amber-300 shadow-md sticky top-0 z-50 transition-all duration-300">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-extrabold text-stone-50 tracking-wide">Fatima Anjum</div>
-          <nav className="space-x-6 text-stone-50">
+          <div className="text-xl font-extrabold text-fuchsia-900 tracking-wide">Fatima Anjum</div>
+          <nav className="space-x-6 text-fuchsia-900">
             {["home", "about", "projects", "contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}
-                className="hover:text-fuchsia-300 transition-colors duration-300 font-medium"
+                className="hover:text-stone-50 transition-colors duration-300 font-medium"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>
@@ -28,12 +28,12 @@ const App = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="bg-gradient-to-b from-purple-400 to-white py-20 text-center animate-fade-in"
+        className="bg-gradient-to-b from-stone-100 to-yellow-200 py-10 text-center animate-fade-in"
       >
         <div className="max-w-xl mx-auto">
           <img
             src="/Images/profile.png" alt="Profile"
-            className="w-50 h-60 rounded-full mx-auto mb-6 border-4 border-white-400 shadow-md transform transition-transform duration-300 hover:scale-105"
+            className="w-50 h-60 rounded-full mx-auto mb-6 border-4 border-fuchsia-900 shadow-md transform transition-transform duration-300 hover:scale-105"
           />
           <h1 className="text-4xl font-bold mb-2 text-fuchsia-950">Hi, I'm Fatima Anjum</h1>
           <p className="mb-6 text-lg text-gray-600">
@@ -50,7 +50,7 @@ const App = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-purple-200 py-20 animate-fade-left">
+      <section id="about" className="bg-stone-100 py-20 animate-fade-left">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-fuchsia-950">About Me</h2>
           <p className="mb-8 text-gray-700 leading-relaxed">
@@ -60,7 +60,7 @@ const App = () => {
             {["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Bootstrap", "MySQL"].map((skill, i) => (
               <span
                 key={i}
-                className="bg-stone-50 text-fuchsia-950 px-3 py-1 rounded-full text-sm font-medium hover:bg-fuchsia-200 transition"
+                className="bg-fuchsia-900 text-stone-100 px-3 py-1 rounded-full text-sm font-medium hover:bg-fuchsia-300 hover:text-fuchsia-900 transition"
               >
                 {skill}
               </span>
@@ -70,9 +70,9 @@ const App = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-fuchsia-950 animate-fade-up">
+      <section id="projects" className="py-20 bg-amber-200 animate-fade-up">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-stone-50">Projects</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-fuchsia-900">Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -80,6 +80,11 @@ const App = () => {
                 title: "Portfolio Website",
                 description:
                   "My personal portfolio showcasing web development skills. Built using React, Tailwind CSS, and Framer Motion for animation. Fully responsive and optimized for performance.",
+              },
+              {
+                title: "SmartSit (FYP – Ongoing)",
+                description:
+                  "A web & app-based smart seating management system using IoT and Machine Learning to detect sitting posture, monitor seating habits, and provide posture correction for improved health and comfort.",
               },
               {
                 title: "LocalBiz Booster",
@@ -103,9 +108,14 @@ const App = () => {
                   "A desktop application built with Java Swing and MySQL for managing inventory, products, and suppliers. Features include user login, CRUD operations, and real-time database updates. Created as part of a DBMS course project.",
               },
               {
-                title: "Digital Clock",
+                title: "SmartHire",
                 description:
-                  "A basic digital clock application built with Java Swing. It displays the current time with real-time updates using GUI components and Java threads.",
+                  "A web-based recruitment application featuring four modules: Resume Parsing, Job Description Matching, Interview Management, and Face Matching for efficient candidate screening and hiring processes.",
+              },
+               {
+                title: "Medication Reminder & Tracker",
+                description:
+                  "A web application that helps users track medicines and receive reminders for doses. Focused on improving medication management and user convenience.",
               },
 
             ].map((project, index) => (
@@ -156,14 +166,14 @@ const App = () => {
       </section> */}
 
       {/* Footer */}
-      <footer className="bg-fuchsia-950 text-white text-center py-6 animate-fade-up">
+      <footer className="bg-amber-300 text-fuchsia-900 text-center py-6 animate-fade-up">
         <div className="flex justify-center space-x-6 mb-3 text-lg">
 
-          <a href="https://www.linkedin.com/in/fatima-anjum-80ba41308/" className="hover:text-fuchsia-300 transition-colors">
+          <a href="https://www.linkedin.com/in/fatima-anjum-80ba41308/" className="hover:text-fuchsia-600 transition-colors">
             <FaLinkedin />
           </a>
         </div>
-        <p className="text-sm text-gray-400">&copy; 2025 Fatima Anjum. All rights reserved.</p>
+        <p className="text-sm text-gray-900">&copy; 2025 Fatima Anjum. All rights reserved.</p>
       </footer>
     </div>
   );
